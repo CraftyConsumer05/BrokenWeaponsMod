@@ -93,8 +93,6 @@
   </statBases>
   <equippedStatOffsets>
     <WorkSpeedGlobal>2.5</WorkSpeedGlobal>
-    <TameAnimalChance>1</TameAnimalChance>
-    <TrainAnimalChance>1</TrainAnimalChance>
   </equippedStatOffsets>
   <weaponTags>
     <li>NeolithicRangedBasic</li>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Name="HatMakeableBase" ParentName="ApparelMakeableBase" Abstract="True">
+        <thingCategories>
+            <li>Headgear</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="HatMakeableBase" Name="CowboyHat">
+        <defName>Apparel_TrainerCowboyHat</defName>
+        <label>Trainer's Cowboy Hat</label>
+        <description>Stylish yet rugged, this hat keeps the sun and rain off - and it gives anyone who wears it a bit of extra charm with both humanoids and animals</description>
+        <possessionCount>1</possessionCount>
+        <recipeMaker>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+            <displayPriority>100</displayPriority>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/CowboyHat/CowboyHat</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(0.9, 0.9)</drawSize>
+        </graphicData>
+        <costStuffCount>25</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <statBases>
+            <MaxHitPoints>350</MaxHitPoints>
+            <WorkToMake>1000</WorkToMake>
+            <Mass>0.10</Mass>
+            <StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.80</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>0.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.80</SocialImpact>
+            <TameAnimalChance>1</TameAnimalChance>
+            <TrainAnimalChance>1</TrainAnimalChance>
+            <AnimalGatherSpeed>1.5</AnimalGatherSpeed>
+            <AnimalGatherYield>1.5</AnimalGatherYield>
+            <GlobalLearningFactor>.20</GlobalLearningFactor>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CowboyHat/CowboyHat</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>IndustrialBasic</li>
+                <li>Western</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.9,0.54,0.15,1)</only>
+                </li>
+                <li>
+                    <weight>15</weight>
+                    <only>(0.9,0.6,0.18,1)</only>
+                </li>
+                <li>
+                    <weight>20</weight>
+                    <only>(0.9,0.42,0.23,1)</only>
+                </li>
+            </options>
+        </colorGenerator>
+        <tradeTags>
+            <li>BasicClothing</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="CowboyHat">
+        <defName>Apparel_MinerBowlerHat</defName>
+        <label>Miner's Bowler Hat</label>
+        <description>A good-looking hat which projects a slightly urban, money-loving style. Greatly Helps in Mining</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/BowlerHat/BowlerHat</texPath>
+            <drawSize>(0.9, 0.9)</drawSize>
+        </graphicData>
+        <costStuffCount>20</costStuffCount>
+        <uiIconScale>1.25</uiIconScale>
+        <statBases>
+        <WorkToMake>1000</WorkToMake>
+        <Mass>0.10</Mass>
+        <StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+        <StuffEffectMultiplierInsulation_Cold>0.90</StuffEffectMultiplierInsulation_Cold>
+        <StuffEffectMultiplierInsulation_Heat>0.90</StuffEffectMultiplierInsulation_Heat>
+        <EquipDelay>0.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MiningSpeed>1.8</MiningSpeed>
+            <MiningYield>1.5</MiningYield>
+            <GlobalLearningFactor>.20</GlobalLearningFactor>
+            <CarryingCapacity>100</CarryingCapacity>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/BowlerHat/BowlerHat</wornGraphicPath>
+        </apparel>
+        <tradeTags>
+            <li>BasicClothing</li>
+        </tradeTags>
+        </ThingDef>
+
+
+        <ThingDef ParentName="HatMakeableBase">
+        <defName>Apparel_CraftingTribalHeaddress</defName>
+        <label>Crafter's Tribal Headdress</label>
+        <description>Elegant traditional garb, often with religious significance. Improves Crafting and Artwork Speed</description>
+        <recipeMaker> 
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+                <li>CraftingSpot</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            </recipeMaker>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/TribalHeaddress/TribalHeaddress</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.80</drawSize>
+        </graphicData>
+        <uiIconScale>1.15</uiIconScale>
+        <stuffCategories>
+            <li>Fabric</li>
+        </stuffCategories>
+        <techLevel>Neolithic</techLevel>
+        <costStuffCount>50</costStuffCount>
+        <statBases>
+            <WorkToMake>1000</WorkToMake>
+            <Mass>0.10</Mass>
+            <StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <WorkTableWorkSpeedFactor>2.5</WorkTableWorkSpeedFactor>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/TribalHeaddress/TribalHeaddress</wornGraphicPath>
+            <ideoDesireAllowedFactionCategoryTags>
+                <li>Tribal</li>
+            </ideoDesireAllowedFactionCategoryTags>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+        </apparel>
+        <tradeTags>
+            <li>BasicClothing</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="HatMakeableBase">
+        <defName>Apparel_MedicalTuque</defName>
+        <label>Medic's Tuque</label>
+        <description>A soft, thick cap. Magically helps all medical concerns</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/Tuque/Tuque</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.25</uiIconScale>
+        <costStuffCount>20</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+        </stuffCategories>
+        <statBases>
+            <MaxHitPoints>350</MaxHitPoints>
+            <WorkToMake>1000</WorkToMake>
+            <Mass>0.07</Mass>
+            <StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>0.5</EquipDelay>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+            <displayPriority>105</displayPriority>
+        </recipeMaker>
+        <apparel>
+        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+        <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+        <bodyPartGroups>
+            <li>UpperHead</li>
+        </bodyPartGroups>
+        <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Tuque/Tuque</wornGraphicPath>
+        <layers>
+            <li>Overhead</li>
+        </layers>
+        <tags>
+            <li>IndustrialBasic</li>
+        </tags>
+        <defaultOutfitTags>
+            <li>Worker</li>
+            <li>Soldier</li>
+        </defaultOutfitTags>
+        <equippedStatOffsets>
+            <MedicalTendSpeed>2</MedicalTendSpeed>
+            <MedicalTendQuality>1.8</MedicalTendQuality>
+            <MedicalSurgerySuccessChance>1.5</MedicalSurgerySuccessChance>
+            <GlobalLearningFactor>.40</GlobalLearningFactor>
+            <ImmunityGainSpeed>2</ImmunityGainSpeed>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.33,0.33,0.33,1)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.65,0.65,0.65,1)</only>
+                </li>
+                <li>
+                    <weight>6</weight>
+                    <min>(0.3,0.3,0.3,1)</min>
+                    <max>(0.5,0.5,0.5,1)</max>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.9,0.9,0.9,1)</only>
+                </li>
+            </options>
+        </colorGenerator>
+        <tradeTags>
+            <li>BasicClothing</li>
+        </tradeTags>
+    </ThingDef>
+
+
+
+</Defs>
