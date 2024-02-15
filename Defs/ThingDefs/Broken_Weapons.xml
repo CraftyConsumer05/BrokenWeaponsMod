@@ -137,74 +137,17 @@
 <defName>Bullet_Blowgun</defName>
 <label>dart</label>
 <graphicData>
-<texPath>Things/Projectile/RSDart</texPath>
-<graphicClass>Graphic_Single</graphicClass>
+  <texPath>Projectile/Dart</texPath>
+  <graphicClass>Graphic_Single</graphicClass>
 </graphicData>
 <projectile>
-<flyOverhead>false</flyOverhead>
-<damageDef>Dart</damageDef>
-<damageAmountBase>8</damageAmountBase>
-<speed>42</speed>
+  <flyOverhead>false</flyOverhead>
+  <damageDef>Dart</damageDef>
+  <damageAmountBase>250</damageAmountBase>
+  <speed>50</speed>
+  <armorPenetrationBase>.8</armorPenetrationBase>
+  <stoppingPower>.5</stoppingPower>
 </projectile>
 </ThingDef>
-<ThingDef ParentName="BaseWeaponNeolithic">
-<defName>Gun_Blowgun</defName>
-<label>blowgun</label>
-<description>A simple weapon consisting of a narrow, long tube for firing light projectiles or darts. While dart itself is not so lethal, it has poison on the tip.</description>
-<graphicData>
-<texPath>Things/A16/Blowgun</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<soundInteract>Bow_Small</soundInteract>
-<costList>
-<MedicineHerbal>5</MedicineHerbal>
-<WoodLog>30</WoodLog>
-</costList>
-<generateCommonality>0.1</generateCommonality>
-<statBases>
-<WorkToMake>4500</WorkToMake>
-<Mass>0.5</Mass>
-<AccuracyTouch>0.7</AccuracyTouch>
-<AccuracyShort>0.66</AccuracyShort>
-<AccuracyMedium>0.31</AccuracyMedium>
-<AccuracyLong>0.12</AccuracyLong>
-<RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
-</statBases>
-<weaponTags>
-<li>NeolithicRangedBasic</li>
-</weaponTags>
-<weaponClasses>
-<li>Ranged</li>
-<li>RangedLight</li>
-</weaponClasses>
-<recipeMaker>
-<recipeUsers>
-<li>ElectricSmithy</li>
-<li>FueledSmithy</li>
-<li>CraftingSpot</li>
-</recipeUsers>
-</recipeMaker>
-<verbs>
-<li>
-<verbClass>Verb_Shoot</verbClass>
-<hasStandardCommand>true</hasStandardCommand>
-<defaultProjectile>Bullet_Blowgun</defaultProjectile>
-<warmupTime>1.2</warmupTime>
-<range>10</range>
-<soundCast>Bow_Small</soundCast>
-</li>
-</verbs>
-<tools>
-<li>
-<capacities>
-<li>Blunt</li>
-<li>Poke</li>
-</capacities>
-<power>8</power>
-<cooldownTime>1.6</cooldownTime>
-</li>
-</tools>
-</ThingDef>
 
-  
 </Defs>
