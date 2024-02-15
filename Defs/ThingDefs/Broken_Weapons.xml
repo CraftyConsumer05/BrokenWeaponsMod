@@ -107,8 +107,8 @@
       <li>ElectricSmithy</li>
       <li>FueledSmithy</li>
       <li>CraftingSpot</li>
-      <displayPriority>439</displayPriority>
     </recipeUsers>
+    <displayPriority>439</displayPriority>
   </recipeMaker>
   <verbs>
     <li>
