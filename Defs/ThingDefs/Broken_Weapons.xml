@@ -80,20 +80,21 @@
   </graphicData>
   <soundInteract>Bow_Small</soundInteract>
   <costList>
-    <WoodLog>30</WoodLog>
+    <WoodLog>25</WoodLog>
   </costList>
-  <generateCommonality>0.1</generateCommonality>
   <statBases>
     <WorkToMake>1000</WorkToMake>
-    <Mass>0.1</Mass>
+    <Mass>0.25</Mass>
     <AccuracyTouch>1</AccuracyTouch>
     <AccuracyShort>1</AccuracyShort>
     <AccuracyMedium>1</AccuracyMedium>
     <AccuracyLong>1</AccuracyLong>
-    <RangedWeapon_Cooldown>.5</RangedWeapon_Cooldown>
+    <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
   </statBases>
   <equippedStatOffsets>
-    <ShootingAccuracy>1</ShootingAccuracy>
+    <WorkSpeedGlobal>2.5</WorkSpeedGlobal>
+    <TameAnimalChance>1</TameAnimalChance>
+    <TrainAnimalChance>1</TrainAnimalChance>
   </equippedStatOffsets>
   <weaponTags>
     <li>NeolithicRangedBasic</li>
@@ -116,7 +117,7 @@
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>Bullet_Blowgun</defaultProjectile>
       <warmupTime>.5</warmupTime>
-      <range>30</range>
+      <range>40</range>
       <soundCast>Bow_Small</soundCast>
     </li>
   </verbs>
@@ -136,16 +137,16 @@
 <defName>Bullet_Blowgun</defName>
 <label>dart</label>
 <graphicData>
-  <texPath>Projectile/Dart</texPath>
+  <texPath>Projectiles/Dart</texPath>
   <graphicClass>Graphic_Single</graphicClass>
 </graphicData>
 <projectile>
-  <flyOverhead>false</flyOverhead>
+  <flyOverhead>true</flyOverhead>
   <damageDef>Dart</damageDef>
-  <damageAmountBase>250</damageAmountBase>
+  <damageAmountBase>120</damageAmountBase>
   <speed>50</speed>
-  <armorPenetrationBase>.8</armorPenetrationBase>
-  <stoppingPower>.5</stoppingPower>
+  <armorPenetrationBase>0.5</armorPenetrationBase>
+  <stoppingPower>0.2</stoppingPower>
 </projectile>
 </ThingDef>
 
