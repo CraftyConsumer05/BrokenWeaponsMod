@@ -1,8 +1,8 @@
-﻿<?xml version="1.4" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>Broken Weapon</defName>
+    <defName>Broken_Weapon</defName>
     <label>Broken Weapon</label>
     <description>Highly Broken Sword with off the charts offset</description>
     <possessionCount>1</possessionCount>
@@ -73,7 +73,7 @@
   <ThingDef ParentName="BaseWeaponNeolithic">
   <defName>DeadBlowgun</defName>
   <label>BlowGun of Death</label>
-  <description> Supposed to be a normal blowgun but is extrmely deadly</description>
+  <description>Supposed to be a normal blowgun but is extrmely deadly</description>
   <graphicData>
     <texPath>Weapons/Blowgun</texPath>
     <graphicClass>Graphic_Single</graphicClass>
