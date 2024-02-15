@@ -200,27 +200,6 @@
             <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>0.5</EquipDelay>
         </statBases>
-        <recipeMaker>
-            <researchPrerequisite>ComplexClothing</researchPrerequisite>
-            <displayPriority>105</displayPriority>
-        </recipeMaker>
-        <apparel>
-        <countsAsClothingForNudity>false</countsAsClothingForNudity>
-        <developmentalStageFilter>Child, Adult</developmentalStageFilter>
-        <bodyPartGroups>
-            <li>UpperHead</li>
-        </bodyPartGroups>
-        <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Tuque/Tuque</wornGraphicPath>
-        <layers>
-            <li>Overhead</li>
-        </layers>
-        <tags>
-            <li>IndustrialBasic</li>
-        </tags>
-        <defaultOutfitTags>
-            <li>Worker</li>
-            <li>Soldier</li>
-        </defaultOutfitTags>
         <equippedStatOffsets>
             <MedicalTendSpeed>2</MedicalTendSpeed>
             <MedicalTendQuality>1.8</MedicalTendQuality>
@@ -229,6 +208,27 @@
             <ImmunityGainSpeed>2</ImmunityGainSpeed>
             <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
         </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+            <displayPriority>105</displayPriority>
+        </recipeMaker>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Tuque/Tuque</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>IndustrialBasic</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
         </apparel>
         <colorGenerator Class="ColorGenerator_Options">
             <options>
@@ -255,6 +255,8 @@
             <li>BasicClothing</li>
         </tradeTags>
     </ThingDef>
+
+    
 
 
 
