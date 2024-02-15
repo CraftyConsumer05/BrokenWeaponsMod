@@ -86,10 +86,10 @@
   <statBases>
     <WorkToMake>1000</WorkToMake>
     <Mass>0.1</Mass>
-    <AccuracyTouch>1.5</AccuracyTouch>
-    <AccuracyShort>1.5</AccuracyShort>
-    <AccuracyMedium>1.5</AccuracyMedium>
-    <AccuracyLong>1.5</AccuracyLong>
+    <AccuracyTouch>1</AccuracyTouch>
+    <AccuracyShort>1</AccuracyShort>
+    <AccuracyMedium>1</AccuracyMedium>
+    <AccuracyLong>1</AccuracyLong>
     <RangedWeapon_Cooldown>.5</RangedWeapon_Cooldown>
   </statBases>
   <equippedStatOffsets>
@@ -107,7 +107,7 @@
       <li>ElectricSmithy</li>
       <li>FueledSmithy</li>
       <li>CraftingSpot</li>
-      <displayPriority>400</displayPriority>
+      <displayPriority>439</displayPriority>
     </recipeUsers>
   </recipeMaker>
   <verbs>
@@ -118,7 +118,6 @@
       <warmupTime>.5</warmupTime>
       <range>30</range>
       <soundCast>Bow_Small</soundCast>
-      <muzzleFlashScale>0</muzzleFlashScale>
     </li>
   </verbs>
   <tools>
