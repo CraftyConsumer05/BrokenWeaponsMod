@@ -23,7 +23,8 @@
       <Mass>0.25</Mass>
     </statBases>
     <equippedStatOffsets>
-      <WorkSpeedGlobal>2.5</WorkSpeedGlobal>
+      <HealingSpeed>2</HealingSpeed>
+      <MoveSpeed>10</MoveSpeed>
     </equippedStatOffsets>
     <relicChance>1</relicChance>
     <equippedAngleOffset>-65</equippedAngleOffset>
@@ -92,7 +93,8 @@
     <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
   </statBases>
   <equippedStatOffsets>
-    <WorkSpeedGlobal>2.5</WorkSpeedGlobal>
+    <HealingSpeed>2</HealingSpeed>
+    <MoveSpeed>5</MoveSpeed>
   </equippedStatOffsets>
   <weaponTags>
     <li>NeolithicRangedBasic</li>
