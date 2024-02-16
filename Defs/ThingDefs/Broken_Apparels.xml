@@ -6,7 +6,7 @@
         </thingCategories>
     </ThingDef>
 
-    <ThingDef ParentName="HatMakeableBase" Name="CowboyHat">
+    <ThingDef ParentName="HatMakeableBase">
         <defName>Apparel_TrainerCowboyHat</defName>
         <label>Trainer's Cowboy Hat</label>
         <description>Stylish yet rugged, this hat keeps the sun and rain off - and it gives anyone who wears it a bit of extra charm with both humanoids and animals</description>
@@ -40,6 +40,79 @@
             <TrainAnimalChance>1</TrainAnimalChance>
             <AnimalGatherSpeed>1.5</AnimalGatherSpeed>
             <AnimalGatherYield>1.5</AnimalGatherYield>
+            <GlobalLearningFactor>.20</GlobalLearningFactor>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CowboyHat/CowboyHat</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>IndustrialBasic</li>
+                <li>Western</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.9,0.54,0.15,1)</only>
+                </li>
+                <li>
+                    <weight>15</weight>
+                    <only>(0.9,0.6,0.18,1)</only>
+                </li>
+                <li>
+                    <weight>20</weight>
+                    <only>(0.9,0.42,0.23,1)</only>
+                </li>
+            </options>
+        </colorGenerator>
+        <tradeTags>
+            <li>BasicClothing</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="HatMakeableBase">
+        <defName>Apparel_FarmersCowboyHat</defName>
+        <label>Farmer's Cowboy Hat</label>
+        <description>Stylish yet rugged, this hat keeps the sun and rain off - and it gives anyone who wears an extraboost with farming</description>
+        <possessionCount>1</possessionCount>
+        <recipeMaker>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+            <displayPriority>100</displayPriority>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/CowboyHat/CowboyHat</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(0.9, 0.9)</drawSize>
+        </graphicData>
+        <costStuffCount>25</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <statBases>
+            <MaxHitPoints>350</MaxHitPoints>
+            <WorkToMake>1000</WorkToMake>
+            <Mass>0.10</Mass>
+            <StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.80</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>0.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <PlantWorkSpeed>1.80</PlantWorkSpeed>
+            <PlantHarvestYield>1.50</PlantHarvestYield>
             <GlobalLearningFactor>.20</GlobalLearningFactor>
             <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
         </equippedStatOffsets>
@@ -162,13 +235,14 @@
         <statBases>
             <WorkToMake>1000</WorkToMake>
             <Mass>0.10</Mass>
-            <StuffEffectMultiplierArmor>.9</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierArmor>0.9</StuffEffectMultiplierArmor>
             <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
             <StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>.5</EquipDelay>
+            <EquipDelay>0.5</EquipDelay>
         </statBases>
         <equippedStatOffsets>
             <WorkTableWorkSpeedFactor>2.5</WorkTableWorkSpeedFactor>
+            <GlobalLearningFactor>.80</GlobalLearningFactor>
             <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
         </equippedStatOffsets>
         <apparel>
