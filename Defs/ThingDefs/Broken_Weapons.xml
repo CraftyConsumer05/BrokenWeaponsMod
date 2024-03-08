@@ -23,7 +23,6 @@
       <Mass>0.25</Mass>
     </statBases>
     <equippedStatOffsets>
-      <HealingSpeed>2</HealingSpeed>
       <MoveSpeed>10</MoveSpeed>
     </equippedStatOffsets>
     <relicChance>1</relicChance>
@@ -93,7 +92,6 @@
     <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
   </statBases>
   <equippedStatOffsets>
-    <HealingSpeed>2</HealingSpeed>
     <MoveSpeed>5</MoveSpeed>
   </equippedStatOffsets>
   <weaponTags>
@@ -149,5 +147,78 @@
   <stoppingPower>0.2</stoppingPower>
 </projectile>
 </ThingDef>
+
+<!-- ==============================Master Rifle========================= -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_MasterAssaultRifle</defName>
+    <label>master assault rifle</label>
+    <description>A general-purpose gas-operated assault rifle for field or urban combat. The Perfect Killing Weapon</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/AssaultRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>1</Mass>
+      <AccuracyTouch>1</AccuracyTouch>
+      <AccuracyShort>1</AccuracyShort>
+      <AccuracyMedium>1</AccuracyMedium>
+      <AccuracyLong>1</AccuracyLong>
+      <RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
+        <warmupTime>0.25</warmupTime>
+        <range>65</range>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+        <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+        <li>Blunt</li>
+        <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
 
 </Defs>
