@@ -2,9 +2,9 @@
 <Defs>
   
    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>Broken_Weapon</defName>
-    <label>Broken Weapon</label>
-    <description>Highly Broken Sword with off the charts offset</description>
+    <defName>Broken_WeaponMachete</defName>
+    <label>Goldy Machete</label>
+    <description>Highly Broken Machete with off the charts offsets</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Weapons/Machete</texPath>
@@ -14,7 +14,9 @@
     <uiIconScale>1.2</uiIconScale>
     <techLevel>Medieval</techLevel>
     <costStuffCount>10</costStuffCount>
-    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
     <weaponTags>
       <li>MedievalMeleeDecent</li>
     </weaponTags>
@@ -38,7 +40,7 @@
           <li>Blunt</li>
         </capacities>
         <power>150</power>
-        <cooldownTime>.5</cooldownTime>
+        <cooldownTime>0.5</cooldownTime>
       </li>
       <li>
         <label>point</label>
@@ -46,7 +48,7 @@
           <li>Stab</li>
         </capacities>
         <power>169</power>
-        <cooldownTime>.5</cooldownTime>
+        <cooldownTime>0.5</cooldownTime>
       </li>
       <li>
         <label>edge</label>
@@ -54,7 +56,7 @@
           <li>Cut</li>
         </capacities>
         <power>169</power>
-        <cooldownTime>.5</cooldownTime>
+        <cooldownTime>0.5</cooldownTime>
       </li>
     </tools>
     <recipeMaker>
@@ -114,7 +116,7 @@
       <verbClass>Verb_Shoot</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>Bullet_Blowgun</defaultProjectile>
-      <warmupTime>.5</warmupTime>
+      <warmupTime>0.5</warmupTime>
       <range>40</range>
       <soundCast>Bow_Small</soundCast>
     </li>
@@ -125,8 +127,8 @@
         <li>Blunt</li>
         <li>Poke</li>
       </capacities>
-      <power>150</power>
-      <cooldownTime>.5</cooldownTime>
+      <power>25</power>
+      <cooldownTime>0.5</cooldownTime>
     </li>
   </tools>
 </ThingDef>
@@ -198,7 +200,7 @@
     </verbs>
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
-      <li>AssaultRifle</li>
+      <li>MasterAssaultRifle</li>
     </weaponTags>
     <tools>
       <li>
@@ -207,7 +209,7 @@
         <li>Blunt</li>
         </capacities>
         <power>10</power>
-        <cooldownTime>.5</cooldownTime>
+        <cooldownTime>0.5</cooldownTime>
       </li>
       <li>
         <label>barrel</label>
@@ -216,7 +218,7 @@
         <li>Poke</li>
         </capacities>
         <power>10</power>
-        <cooldownTime>.5</cooldownTime>
+        <cooldownTime>0.5</cooldownTime>
       </li>
     </tools>
   </ThingDef>

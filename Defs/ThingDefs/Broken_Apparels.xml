@@ -40,7 +40,7 @@
             <TrainAnimalChance>1</TrainAnimalChance>
             <AnimalGatherSpeed>1.5</AnimalGatherSpeed>
             <AnimalGatherYield>1.5</AnimalGatherYield>
-            <GlobalLearningFactor>.20</GlobalLearningFactor>
+            <GlobalLearningFactor>1.5</GlobalLearningFactor>
             <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
         </equippedStatOffsets>
         <apparel>
@@ -113,7 +113,7 @@
         <equippedStatOffsets>
             <PlantWorkSpeed>1.80</PlantWorkSpeed>
             <PlantHarvestYield>1.50</PlantHarvestYield>
-            <GlobalLearningFactor>.20</GlobalLearningFactor>
+            <GlobalLearningFactor>1.5</GlobalLearningFactor>
             <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
         </equippedStatOffsets>
         <apparel>
@@ -182,7 +182,7 @@
         <equippedStatOffsets>
             <MiningSpeed>1.8</MiningSpeed>
             <MiningYield>1.5</MiningYield>
-            <GlobalLearningFactor>.20</GlobalLearningFactor>
+            <GlobalLearningFactor>1.5</GlobalLearningFactor>
             <CarryingCapacity>100</CarryingCapacity>
             <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
         </equippedStatOffsets>
@@ -242,7 +242,7 @@
         </statBases>
         <equippedStatOffsets>
             <WorkTableWorkSpeedFactor>2.5</WorkTableWorkSpeedFactor>
-            <GlobalLearningFactor>.80</GlobalLearningFactor>
+            <GlobalLearningFactor>1.5</GlobalLearningFactor>
             <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
         </equippedStatOffsets>
         <apparel>
@@ -293,7 +293,7 @@
             <MedicalTendSpeed>2</MedicalTendSpeed>
             <MedicalTendQuality>1.8</MedicalTendQuality>
             <MedicalSurgerySuccessChance>1.5</MedicalSurgerySuccessChance>
-            <GlobalLearningFactor>.40</GlobalLearningFactor>
+            <GlobalLearningFactor>1.5</GlobalLearningFactor>
             <ImmunityGainSpeed>2</ImmunityGainSpeed>
             <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
         </equippedStatOffsets>
