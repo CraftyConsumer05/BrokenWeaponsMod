@@ -41,9 +41,7 @@
             <AnimalGatherSpeed>1.5</AnimalGatherSpeed>
             <AnimalGatherYield>1.5</AnimalGatherYield>
             <GlobalLearningFactor>1.5</GlobalLearningFactor>
-            <TradePriceImprovement>.50</TradePriceImprovement>
-            <!-- ============ For Removal =============== -->
-            <ResearchSpeed>2.5</ResearchSpeed>
+            <TradePriceImprovement>.60</TradePriceImprovement>
             <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
         </equippedStatOffsets>
         <apparel>
@@ -272,7 +270,7 @@
 
     <ThingDef ParentName="HatMakeableBase">
         <defName>Apparel_MedicalTuque</defName>
-        <label>Medic's Tuque</label>
+        <label>Medic's Cap</label>
         <description>A soft, thick cap. Magically helps all medical concerns</description>
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/Tuque/Tuque</texPath>
@@ -294,10 +292,12 @@
         </statBases>
         <equippedStatOffsets>
             <MedicalTendSpeed>2</MedicalTendSpeed>
-            <MedicalTendQuality>1.8</MedicalTendQuality>
-            <MedicalSurgerySuccessChance>1.5</MedicalSurgerySuccessChance>
+            <MedicalTendQuality>2</MedicalTendQuality>
+            <MedicalSurgerySuccessChance>2</MedicalSurgerySuccessChance>
             <GlobalLearningFactor>1.5</GlobalLearningFactor>
-            <ImmunityGainSpeed>2</ImmunityGainSpeed>
+            <ImmunityGainSpeed>2.5</ImmunityGainSpeed>
+            <ResearchSpeedFactor>2.5</ResearchSpeedFactor>
+
             <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
         </equippedStatOffsets>
         <recipeMaker>

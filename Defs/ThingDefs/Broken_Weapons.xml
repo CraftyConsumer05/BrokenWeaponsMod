@@ -3,9 +3,8 @@
   
    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Broken_WeaponMachete</defName>
-    <label>Goldy Machete</label>
+    <label>Heavenly Machete</label>
     <description>Highly Broken Machete with off the charts offsets</description>
-    <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Weapons/Machete</texPath>
       <graphicClass>Graphic_Single</graphicClass>
