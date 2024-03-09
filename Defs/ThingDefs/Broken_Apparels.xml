@@ -35,12 +35,15 @@
             <EquipDelay>0.5</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <SocialImpact>0.80</SocialImpact>
+            <SocialImpact>1.5</SocialImpact>
             <TameAnimalChance>1</TameAnimalChance>
             <TrainAnimalChance>1</TrainAnimalChance>
             <AnimalGatherSpeed>1.5</AnimalGatherSpeed>
             <AnimalGatherYield>1.5</AnimalGatherYield>
             <GlobalLearningFactor>1.5</GlobalLearningFactor>
+            <TradePriceImprovement>.50</TradePriceImprovement>
+            <!-- ============ For Removal =============== -->
+            <ResearchSpeed>2.5</ResearchSpeed>
             <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
         </equippedStatOffsets>
         <apparel>

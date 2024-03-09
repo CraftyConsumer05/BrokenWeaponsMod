@@ -33,6 +33,7 @@
       <li>Metallic</li>
       <li>Woody</li>
     </stuffCategories>
+    <generateAllowChance>0</generateAllowChance>
     <tools>
       <li>
         <label>handle</label>
@@ -121,6 +122,7 @@
       <soundCast>Bow_Small</soundCast>
     </li>
   </verbs>
+  <generateAllowChance>0</generateAllowChance>
   <tools>
     <li>
       <capacities>
@@ -202,6 +204,7 @@
       <li>IndustrialGunAdvanced</li>
       <li>MasterAssaultRifle</li>
     </weaponTags>
+    <generateAllowChance>0</generateAllowChance>
     <tools>
       <li>
         <label>stock</label>
