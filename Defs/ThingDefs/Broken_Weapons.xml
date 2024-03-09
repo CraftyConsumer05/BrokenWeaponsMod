@@ -190,11 +190,11 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
-        <warmupTime>0.25</warmupTime>
+        <defaultProjectile>Bullet_MasterAssaultRifle</defaultProjectile>
+        <warmupTime>0</warmupTime>
         <range>65</range>
         <burstShotCount>5</burstShotCount>
-        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <soundCast>Shot_AssaultRifle</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -224,6 +224,20 @@
         <cooldownTime>0.5</cooldownTime>
       </li>
     </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MasterAssaultRifle</defName>
+    <label>master assault rifle bullet</label>
+    <graphicData>
+    <texPath>Things/Projectile/Bullet_Small</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>50</damageAmountBase>
+      <speed>90</speed>
+    </projectile>
   </ThingDef>
 
 </Defs>
