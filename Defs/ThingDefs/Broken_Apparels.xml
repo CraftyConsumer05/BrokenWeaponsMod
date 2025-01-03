@@ -167,7 +167,6 @@
             <drawSize>(0.9, 0.9)</drawSize>
         </graphicData>
         <costStuffCount>20</costStuffCount>
-        <uiIconScale>1.25</uiIconScale>
         <stuffCategories>
             <li>Fabric</li>
             <li>Leathery</li>
@@ -184,7 +183,6 @@
             <MiningSpeed>1.8</MiningSpeed>
             <MiningYield>1.5</MiningYield>
             <GlobalLearningFactor>1.5</GlobalLearningFactor>
-            <CarryingCapacity>100</CarryingCapacity>
             <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
         </equippedStatOffsets>
         <apparel>
@@ -202,10 +200,26 @@
                 <li>Worker</li>
             </defaultOutfitTags>
         </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.9,0.54,0.15,1)</only>
+                </li>
+                <li>
+                    <weight>15</weight>
+                    <only>(0.9,0.6,0.18,1)</only>
+                </li>
+                <li>
+                    <weight>20</weight>
+                    <only>(0.9,0.42,0.23,1)</only>
+                </li>
+            </options>
+        </colorGenerator>
         <tradeTags>
             <li>BasicClothing</li>
         </tradeTags>
-        </ThingDef>
+    </ThingDef>
 
 
         <ThingDef ParentName="HatMakeableBase">
