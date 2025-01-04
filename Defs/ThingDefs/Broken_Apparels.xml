@@ -1,10 +1,168 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+    <!-- =========================Base for Headgear=========================-->
+    <ThingDef Name="HatBase" ParentName="ApparelBase" Abstract="True">
+        <thingCategories>
+        <li>Headgear</li>
+        </thingCategories>
+        <apparel>
+        <parentTagDef>ApparelHead</parentTagDef>
+        </apparel>
+    </ThingDef>
+
     <ThingDef Name="HatMakeableBase" ParentName="ApparelMakeableBase" Abstract="True">
         <thingCategories>
-            <li>Headgear</li>
+        <li>Headgear</li>
         </thingCategories>
+        <apparel>
+        <parentTagDef>ApparelHead</parentTagDef>
+        </apparel>
     </ThingDef>
+
+    <ThingDef Name="ArmorHelmetMakeableBase" ParentName="ArmorMachineableBase" Abstract="True">
+        <thingCategories>
+        <li>ArmorHeadgear</li>
+        </thingCategories>
+        <apparel>
+        <parentTagDef>ApparelHead</parentTagDef>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef Name="NobleHatMakeableBase" ParentName="ApparelMakeableBase" Abstract="True">
+        <thingCategories>
+        <li>HeadgearNoble</li>
+        </thingCategories>
+        <apparel>
+        <parentTagDef>ApparelHead</parentTagDef>
+        </apparel>
+    </ThingDef>
+
+    <!-- =========================Base for Armor=========================-->
+    <ThingDef Name="ApparelNoQualityBase" Abstract="True">
+        <thingClass>Apparel</thingClass>
+        <category>Item</category>
+        <drawerType>MapMeshOnly</drawerType>
+        <selectable>True</selectable>
+        <pathCost>14</pathCost>
+        <useHitPoints>True</useHitPoints>
+        <techLevel>Medieval</techLevel>
+        <graphicData>
+            <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+        </graphicData>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <DeteriorationRate>2</DeteriorationRate>
+            <Beauty>-3</Beauty>
+        </statBases>
+        <altitudeLayer>Item</altitudeLayer>
+        <alwaysHaulable>True</alwaysHaulable>
+        <tickerType>Never</tickerType>
+        <burnableByRecipe>true</burnableByRecipe>
+        <smeltable>true</smeltable>
+        <comps>
+        <li Class="CompProperties_Forbiddable"/>
+        <li>
+        <compClass>CompColorable</compClass>
+        </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef Name="ApparelBase" ParentName="ApparelNoQualityBase" Abstract="True">
+        <comps>
+        <li>
+        <compClass>CompQuality</compClass>
+        </li>
+        <li Class="CompProperties_Styleable"/>
+        </comps>
+    </ThingDef>
+
+    <ThingDef Name="ApparelMakeableBase" ParentName="ApparelBase" Abstract="True">
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Tailor</effectWorking>
+            <soundWorking>Recipe_Tailor</soundWorking>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <defaultIngredientFilter>
+                <categories>
+                    <li>Root</li>
+                </categories>
+                <disallowedThingDefs>
+                    <li>Gold</li>
+                    <li>Silver</li>
+                    <li>Plasteel</li>
+                    <li>Jade</li>
+                    <li>Uranium</li>
+                    <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+                </disallowedThingDefs>
+            </defaultIngredientFilter>
+        </recipeMaker>
+        <tradeTags>
+        <li>Clothing</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef Name="ArmorSmithableBase" ParentName="ApparelBase" Abstract="True">
+        <smeltable>true</smeltable>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+            <li>ElectricSmithy</li>
+            <li>FueledSmithy</li>
+            </recipeUsers>
+            <defaultIngredientFilter>
+                <categories>
+                    <li>Root</li>
+                </categories>
+                <disallowedThingDefs>
+                    <li>Gold</li>
+                    <li>Silver</li>
+                    <li>Plasteel</li>
+                    <li>Jade</li>
+                    <li>Uranium</li>
+                    <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+                </disallowedThingDefs>
+            </defaultIngredientFilter>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef Name="ArmorMachineableBase" ParentName="ApparelBase" Abstract="True">
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+            <defaultIngredientFilter>
+                <categories>
+                    <li>Root</li>
+                </categories>
+                <disallowedThingDefs>
+                    <li>Gold</li>
+                    <li>Silver</li>
+                    <li>Plasteel</li>
+                    <li>Jade</li>
+                    <li>Uranium</li>
+                    <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+                </disallowedThingDefs>
+            </defaultIngredientFilter>
+        </recipeMaker>
+    </ThingDef>
+
+    <!-- =========================Headgears=========================-->
 
     <ThingDef ParentName="HatMakeableBase">
         <defName>Apparel_TrainerCowboyHat</defName>
@@ -371,8 +529,149 @@
         </tradeTags>
     </ThingDef>
 
-    
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
+        <defName>Apparel_NotsoSimpleHelmet</defName>
+        <label>not so simple helmet</label>
+        <description>A simple looing helmet which which actually gives extreme protection against everything</description>
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/SimpleHelmet/SimpleHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.4</uiIconScale>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>40</costStuffCount>
+        <tradeTags>
+            <li>Clothing</li>
+            <li>Armor</li>
+        </tradeTags>
+        <statBases>
+            <WorkToMake>320</WorkToMake>
+            <MaxHitPoints>500</MaxHitPoints>
+            <Mass>1</Mass>
+            <Flammability>0.4</Flammability>
+            <ArmorRating_Sharp>2</ArmorRating_Sharp>
+            <ArmorRating_Blunt>2</ArmorRating_Blunt>
+            <ArmorRating_Heat>2</ArmorRating_Heat>
+            <Insulation_Cold>4</Insulation_Cold>
+            <Insulation_Heat>2</Insulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <recipeMaker>
+        <researchPrerequisite>Smithing</researchPrerequisite>
+        <recipeUsers>
+            <li>ElectricSmithy</li>
+            <li>FueledSmithy</li>
+        </recipeUsers>
+        <displayPriority>200</displayPriority>
+        </recipeMaker>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/SimpleHelmet/SimpleHelmet</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>IndustrialMilitaryBasic</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
 
+    <!-- =========================Armors=========================-->
+
+    <ThingDef ParentName="ArmorSmithableBase">
+        <defName>Apparel_BrokenPlateArmor</defName>
+        <label>broken plate armor</label>
+        <description>Overlapping solid plates of armor covering the entire body from neck to feet. Quite Strong at that</description>
+        <possessionCount>1</possessionCount>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+            <researchPrerequisite>PlateArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <displayPriority>250</displayPriority>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/PlateArmor/PlateArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>170</costStuffCount>
+        <statBases>
+            <WorkToMake>500</WorkToMake>
+            <MaxHitPoints>800</MaxHitPoints>
+            <Mass>5</Mass>
+            <Flammability>0.1</Flammability>
+            <ArmorRating_Sharp>1</ArmorRating_Sharp>
+            <ArmorRating_Blunt>1</ArmorRating_Blunt>
+            <ArmorRating_Heat>1</ArmorRating_Heat>
+            <Insulation_Cold>32</Insulation_Cold>
+            <Insulation_Heat>20</Insulation_Heat>
+            <EquipDelay>5</EquipDelay>
+        </statBases>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.8</MoveSpeed>
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <tradeTags>
+            <li>Clothing</li>
+            <li>Armor</li>
+        </tradeTags>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PlateArmor/PlateArmor</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>MedievalMilitary</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.33,0.33,0.33)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.65,0.65,0.65)</only>
+                </li>
+                <li>
+                    <weight>6</weight>
+                    <min>(0.3,0.3,0.3)</min>
+                    <max>(0.5,0.5,0.5)</max>
+                </li>
+            </options>
+        </colorGenerator>
+    </ThingDef>
 
 
 </Defs>
