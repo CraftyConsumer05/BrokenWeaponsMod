@@ -33,6 +33,7 @@
       <li>Woody</li>
     </stuffCategories>
     <generateAllowChance>0</generateAllowChance>
+    <generateCommonality>0</generateCommonality>
     <tools>
       <li>
         <label>handle</label>
@@ -122,6 +123,7 @@
     </li>
   </verbs>
   <generateAllowChance>0</generateAllowChance>
+  <generateCommonality>0</generateCommonality>
   <tools>
     <li>
       <capacities>
@@ -204,6 +206,7 @@
       <li>MasterAssaultRifle</li>
     </weaponTags>
     <generateAllowChance>0</generateAllowChance>
+    <generateCommonality>0</generateCommonality>
     <tools>
       <li>
         <label>stock</label>

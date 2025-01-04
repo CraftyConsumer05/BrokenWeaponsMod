@@ -547,6 +547,8 @@
             <li>Clothing</li>
             <li>Armor</li>
         </tradeTags>
+        <generateAllowChance>0</generateAllowChance>
+        <generateCommonality>0</generateCommonality>
         <statBases>
             <WorkToMake>320</WorkToMake>
             <MaxHitPoints>500</MaxHitPoints>
@@ -609,6 +611,8 @@
             <li>Woody</li>
         </stuffCategories>
         <costStuffCount>170</costStuffCount>
+        <generateAllowChance>0</generateAllowChance>
+        <generateCommonality>0</generateCommonality>
         <statBases>
             <WorkToMake>500</WorkToMake>
             <MaxHitPoints>800</MaxHitPoints>
