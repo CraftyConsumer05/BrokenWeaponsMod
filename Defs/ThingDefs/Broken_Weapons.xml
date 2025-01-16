@@ -260,6 +260,8 @@
   <weaponTags>
     <li>ShortShots</li>
   </weaponTags>
+  <generateAllowChance>0</generateAllowChance>
+  <generateCommonality>0</generateCommonality>
   <recipeMaker>
     <researchPrerequisite>BlowbackOperation</researchPrerequisite>
     <skillRequirements>
