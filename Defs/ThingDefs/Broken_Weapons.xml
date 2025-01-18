@@ -325,7 +325,7 @@
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile>
-    <damageDef>Bullet</damageDef>
+    <damageDef>Cut</damageDef>
     <damageAmountBase>5</damageAmountBase>
     <speed>60</speed>
   </projectile>

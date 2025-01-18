@@ -423,8 +423,9 @@
             <EquipDelay>0.5</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <WorkTableWorkSpeedFactor>2.5</WorkTableWorkSpeedFactor>
+            <WorkTableWorkSpeedFactor>3</WorkTableWorkSpeedFactor>
             <GlobalLearningFactor>1.5</GlobalLearningFactor>
+            <ConstructionSpeed>2</ConstructionSpeed>
             <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
         </equippedStatOffsets>
         <apparel>
